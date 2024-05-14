@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDA3A3"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/gym"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Quantity"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/gymview"
+        app:layout_constraintStart_toEndOf="@+id/gymtext"
+        app:layout_constraintTop_toBottomOf="@+id/walk" />
+
+    <EditText
+        android:id="@+id/gymtext"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walktext" />
+
+    <TextView
+        android:id="@+id/gymview"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walkview" />
+
+    <EditText
+        android:id="@+id/walk"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Quantity"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/walkview"
+        app:layout_constraintStart_toEndOf="@+id/walkext"
+        app:layout_constraintTop_toBottomOf="@+id/cycle" />
+
+    <TextView
+        android:id="@+id/walkview"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycleview" />
+
+    <EditText
+        android:id="@+id/walktext"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycletext" />
+
+    <EditText
+        android:id="@+id/cycle"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Quantity"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/cycleview"
+        app:layout_constraintStart_toEndOf="@+id/cycletext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cycleview"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cycletext"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Enter Activity"
+        android:inputType="text"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:onClick="calculate"
+        android:text="Caculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="390dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="FITNESS TRACKER"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:gravity="center"
+        android:hint="Total Calories"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gym" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
